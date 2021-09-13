@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/12209d5a8b.js" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and Minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Table and Media</title>
+</head>
+<body class="grey darken-4">
+    <div class="container">
+        <h1 class="grey-text text-Lighten-4">Tables and Media</h1>
+
+        <!-- Tables-->
+        <table class="white-text">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chrsitine Montes</td>
+                    <td>monteschristinesanchez@gmail.com</td>
+                    <td>Taguig City</td>
+                </tr>
+
+                <tr>
+                    <td>Analyn Cruz</td>
+                    <td>ana.cruz@gmail.com</td>
+                    <td>Makati City</td>
+                </tr>
+
+                <tr>
+                    <td>Vanessa Santos</td>
+                    <td>santosvannesa@gmail.com</td>
+                    <td>Cotabato City</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br>
+
+        <!-- Strpie Table -->
+        <table class="white-text striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chrsitine Montes</td>
+                    <td>monteschristinesanchez@gmail.com</td>
+                    <td>Taguig City</td>
+                </tr>
+
+                <tr>
+                    <td>Analyn Cruz</td>
+                    <td>ana.cruz@gmail.com</td>
+                    <td>Makati City</td>
+                </tr>
+
+                <tr>
+                    <td>Vanessa Santos</td>
+                    <td>santosvannesa@gmail.com</td>
+                    <td>Cotabato City</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br>
+
+        <!-- Bordered, Highligted & Responsive Tables -->
+        <table class="white-text bordered highlight responsive-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chrsitine Montes</td>
+                    <td>monteschristinesanchez@gmail.com</td>
+                    <td>Taguig City</td>
+                </tr>
+                <tr>
+                    <td>Analyn Cruz</td>
+                    <td>ana.cruz@gmail.com</td>
+                    <td>Makati City</td>
+                </tr>
+                <tr>
+                    <td>Vanessa Santos</td>
+                    <td>santosvannesa@gmail.com</td>
+                    <td>Cotabato City</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <br><br>
+
+        <!-- Center Tables -->
+        <table class="white-text bordered highlight center responsive-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Chrsitine Montes</td>
+                    <td>monteschristinesanchez@gmail.com</td>
+                    <td>Taguig City</td>
+                </tr>
+                <tr>
+                    <td>Analyn Cruz</td>
+                    <td>ana.cruz@gmail.com</td>
+                    <td>Makati City</td>
+                </tr>
+                <tr>
+                    <td>Vanessa Santos</td>
+                    <td>santosvannesa@gmail.com</td>
+                    <td>Cotabato City</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br>
+
+        <!--Responsive Imaged -->
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <img src="Images/Image5.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <img src="Images/Image6.jpg" alt="" class="responsive-Images circle">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Responsive video embeded -->
+    <div class="video-container">
+        <iframe width="605" height="340" src="https://www.youtube.com/embed/OB-X501H6OI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+    <!-- End of Container -->
+    </div>
+
+    <div style="height: 1000px;"></div>
+
+    <!---JQueryCDN--->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $('.tabs').tabs();
+    });
+</script>
+</body>
+</html>
