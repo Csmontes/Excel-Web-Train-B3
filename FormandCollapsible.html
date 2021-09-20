@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/12209d5a8b.js" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and Minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Forms and Collapsible</title>
+
+</head>
+<body class="grey darken-3">
+    <div class="container">
+        <h1 class="grey-text text-lighten-4">Forms</h1>
+
+        <form>
+            <div class="input-field">
+                <input type="text" id="name">
+                <label for="name">Name</label>
+            </div>
+
+            <!-- Value and Disabled -->
+            <div class="input-field">
+                <input type="email" id="email" type="email" placeholder="Email" disabled
+                value="tinmontes@gmail.com">
+                <label for="email">Email</label>
+            </div>
+
+            <!-- Text Area -->
+            <div class="input-field">
+                <textarea name="" id="message" class="materialize-textarea">
+                </textarea>
+                <label for="message">Message</label>
+            </div>
+
+            <!-- Inline field -->
+            <div class="input-field inline">
+                <input type="text" id="users">
+                <label for="name">#</label>
+            </div>
+
+            <!-- Icon Prefix -->
+            <div class="input-field">
+                <i class="material-icons prefix">phone</i>
+                <input type="text" id="phone">
+                <label for="">Phone Number</label>
+            </div>
+
+            <!-- Validation Error -->
+            <div class="input-field">
+                <input type="email" id="email" type="validate" placeholder="Email">
+                <label for="email">Email</label>
+                <span class="helper-text" data-error="Invalid Email"
+                data-success="Valid Email">
+            </span>
+            </div>
+
+            <!-- Switch -->
+            <div class="switch">
+                <label> Disable
+                <input type="checkbox" checked>
+                <span class="lever"></span>
+                Enable</label>
+            </div>
+
+            <div class="switch">
+                <label> Disable
+                <input type="checkbox" disabled>
+                <span class="lever"></span>
+                Enable</label>
+            </div>
+
+            <br><br>
+
+            <!-- File Input -->
+            <div class="file-field input-field">
+                <div class="btn"><span>Upload File</span><input type="file"></div>
+                <div class="file-path wrapper"><input type="text" class="file-path"></input></div>
+            </div>
+
+            <!-- Range Slider -->
+            <p class="range-field"><input type="range" min="0" max="10"></p>
+
+            <!-- Date Picker -->
+            <input type="text" class="datepicker">
+
+            <!-- Time Picker -->
+            <input type="text" class="timepicker">
+
+            <br><br>
+
+            <!-- Character counter -->
+            <div class="input-field"><input type="text" id="post" data-length="10"><label for="post">Post</label></div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1 class="grey-text">Collapsible</h1>
+
+    <!-- Collapsible -->
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">group_work</i>
+            </div>
+            <div class="collapsible-body">
+                <span>This is the first area</span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">help</i>
+            </div>
+            <div class="collapsible-body">
+                <span>This is the second area</span>
+            </div>
+        </li>
+        <li class="active">
+            <div class="collapsible-header">
+                <i class="material-icons">add</i>
+            </div>
+            <div class="collapsible-body">
+                <span>This is the third area</span>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Expandable -->
+    <ul class="collapsible popout">
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">group_work</i>
+            </div>
+            <div class="collapsible-body">
+                <span>This is the first area</span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">help</i>
+            </div>
+            <div class="collapsible-body">
+                <span>This is the second area</span>
+            </div>
+        </li>
+        <li class="active">
+            <div class="collapsible-header">
+                <i class="material-icons">add</i>
+            </div>
+            <div class="collapsible-body">
+                <span>This is the third area</span>
+            </div>
+        </li>
+    </ul>
+    </div>
+
+    <!---JQueryCDN--->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Date Picker
+            $('.datepicker').datepicker();
+            // Time Picker
+            $('.timepicker').timepicker();
+
+            // Collapsible
+            $('.collapsible').collapsible({
+                accordion: true
+            });
+        });
+    </script>
+   </script>
+
+</body>
+</html>
